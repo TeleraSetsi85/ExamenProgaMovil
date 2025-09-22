@@ -9,7 +9,7 @@ namespace front.Views
         record struct Movie(int Id, string Title, string Genre, int Release, string ImageUrl);
 
         ObservableCollection<Movie> peliculas = new ObservableCollection<Movie>();
-        HttpClient cliente = new HttpClient { BaseAddress = new Uri("http://localhost:3000/api/movies/") };
+        HttpClient cliente = new HttpClient { BaseAddress = new Uri("https://5ml2ttlq-3000.usw3.devtunnels.ms/api/movies/") };
 
         public AgregarPelicula()
         {
